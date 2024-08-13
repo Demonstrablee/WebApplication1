@@ -18,10 +18,32 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Services() // return the veiw associated with the rout in program.cs
     {
         return View();
     }
+
+     public IActionResult GiftCards()
+    {
+        return View();
+    }
+      public IActionResult Memberships()
+    {
+        return View();
+    }
+      public IActionResult Careers()
+    {
+        return View();
+    }
+     public IActionResult Locations()
+    {
+        return View();
+    }
+     public IActionResult Franchise()
+    {
+        return View();
+    }
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
