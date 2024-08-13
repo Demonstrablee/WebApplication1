@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Unreal Brand";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar d-flex navbar-expand-sm navbar-toggleable-sm navbar-light justify-content-center bg-white box-shadow mb-3">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="Memberships">Memberships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="Privacy">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="GiftCards">GiftCards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="GiftCards">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                                    src="~/img/Design.png"></a>
+
+                        </li>
+                          <li class="nav-item">
+
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="GiftCards">Location</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="GiftCards">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="GiftCards">Franchise</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="logo">
+            <img href="">
+        </div>
+        <div class="selections">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Memberships">Memberships</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Memberships">Services</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Memberships">GiftCards</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Memberships">Locations</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Memberships">Careers</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Memberships">Franchise</a>
+        </div>
+        <div clas="download-app">
+
+        </div>
+        <div class="socials flex-grow-1">
+            <button class="rnd-button">
+                <img alt="facebook" src="~/img/SoMod/icons8-facebook-50.png">
+            </button>
+            <button class="rnd-button">
+                <img alt="instagram" src="~/img/SoMod/icons8-instagram-50.png">
+            </button>
+            <button class="rnd-button">
+                <img src="~/img/SoMod/icons8-twitter-50.png" alt="twitter">
+            </button>
+
+        </div>
+        <div class="container">
+            <p>&copy; 2024 - Unreal Brand INC- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy
+                    Policy</a>
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Acessability </a>
+        </div>
+        </p>
+
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
