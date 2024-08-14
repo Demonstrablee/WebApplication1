@@ -19,24 +19,23 @@ html {
 }
 
 body {
-   
   background-color: black;
   display: flex;
   flex-direction: column;
    
 }
 .footer{
-  background-color: red;
+  background-color: #121b36;
   height: 40vh;
 }
 .line{
   width : 50rem;
-   height :.2rem;
+  height :.2rem;
 }
  
 
-h1,h2,h3,h4,h5,h5, p{
-  color: aliceblue;
+h1,h2,h3,h4,h5,h5, p, a, li{
+  color: white;
 }
 
 .vid{
@@ -50,18 +49,21 @@ h1,h2,h3,h4,h5,h5, p{
   
 }
 header{
-  background-color: blue;
+  background-color: #121b36;
 }
  
 .rnd-button{
   border-radius: 15rem;
-  width : 7rem;
-  height: 7 rem;
+  width : 4rem;
+  height: 4rem;
   background-color: inherit; /*so it looks transparent */
   border: none;
+  margin-right: 2rem;
 }
 .rnd-button:hover{
   background-color: #258cfb;
 }
-
+.text-align{
+  margin-top: 20rem;
+}
 
