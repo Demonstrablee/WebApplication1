@@ -18,44 +18,44 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: black;
+   
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer{
   background-color: red;
+  height: 40vh;
 }
+.line{
+  width : 50rem;
+   height :.2rem;
+}
+ 
 
-.center{
-  display: flex;
-  justify-content: center;
-}
 h1,h2,h3,h4,h5,h5, p{
   color: aliceblue;
 }
 
 .vid{
   background-color: aqua;
-  width: 85vw;
+  width: 70vw;
   height: 100vh;
- /* background-image: url("../img/Spongebob.png"); */
   background-repeat: no-repeat;
-  text-align: center;
-  object-fit: contain;
+  object-fit: fill;
+  justify-content: center;
 }
+ 
 .rnd-button{
   border-radius: 15rem;
   width : 7rem;
   height: 7 rem;
-   background-color: inherit; /*so it looks transparent */
+  background-color: inherit; /*so it looks transparent */
   border: none;
-
-
 }
 .rnd-button:hover{
   background-color: #258cfb;
 }
 
-.center{
-  display: flex;
-  justify-content: center;
-}
+

@@ -24,6 +24,7 @@ app.UseRouting(); //  middle ware that enables routing for web app
 
 app.UseAuthorization();
 
+// Routes for all pages
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
