@@ -18,32 +18,33 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Services() // return the veiw associated with the rout in program.cs
+    public IActionResult Services()
     {
         return View();
     }
 
-     public IActionResult GiftCards()
+    public IActionResult GiftCards()
     {
         return View();
     }
-      public IActionResult Memberships()
+    public IActionResult Memberships()
     {
+            return View();
+    }
+
+     public IActionResult Privacy()
+    {
+            return View();
+    }
+    public IActionResult Franchise(){
         return View();
     }
-      public IActionResult Careers()
-    {
+    public IActionResult Careers(){
         return View();
     }
-     public IActionResult Locations()
-    {
+    public IActionResult Locations(){
         return View();
     }
-     public IActionResult Franchise()
-    {
-        return View();
-    }
-    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
