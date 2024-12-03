@@ -11,109 +11,106 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
-
+    
 
 </head>
 
-<body>
-    <header>
-        <div class="d-flex justify-content-center">
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light justify-content-center box-shadow mb-3">
-                <div class="container-fluid">
+<body class= "d-flex flex-drection-col wrapper">
+    <header class="justify-content-center d-flex">
+      
+       
+        <nav class="navbar d-flex navbar-expand-sm navbar-toggleable-sm navbar-light justify-content-center   box-shadow mb-3">
+            <div class="container-fluid">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Home"
-                                    asp-action="Memberships">Memberships</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Home"
-                                    asp-action="Services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Home"
-                                    asp-action="GiftCards">GiftCards</a>
-                            </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                asp-action="Memberships">Memberships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                asp-action="Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                asp-action="GiftCards">GiftCards</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                                    src="~/img/UNBlogow.png"></a>
 
-                            <li class="nav-item">
-                                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
-                                        src="~/img/UNBlogow.png" width="190" height="50">
-                                </a>
+                        </li>
+                          <li class="nav-item">
 
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light " asp-area="" asp-controller="Home"
-                                    asp-action="Locations">Location</a>
-                            </li>
-                            <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                asp-action="Locations">Location</a>
+                        </li>
+                        <li class="nav-item">
 
-                                <a class="nav-link  text-light" asp-area="" asp-controller="Home"
-                                    asp-action="Careers">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Home"
-                                    asp-action="Franchise">Franchise</a>
-                            </li>
-                        </ul>
-                    </div>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                asp-action="Careers">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home"
+                                asp-action="Franchise">Franchise</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        
     </header>
-    <div class="container">
+    <div class="container content-body">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer d-flex justify-content-center">
-        <div class=" d-flex flex-column justify-content-center ">
+    <footer class="border-top d-flex justify-content-center footer text-muted">
+        <div class= ""  >
 
-
-            <div class="logo d-flex justify-content-center">
-                <img src="~/img/UNBlogow.png" alt="UNB">
-            </div>
-             <div class="line bg-white">
-                   
-            </div>
-            <div class="selections d-flex justify-content-center">
-                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Memberships">Memberships</a>
-                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
-                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="GiftCards">GiftCards</a>
-                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Locations">Locations</a>
-                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Careers">Careers</a>
-                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Franchise">Franchise</a>
-            </div>
-            
-
-            <div class="socials d-flex justify-content-center mb-3">
-                <button class="rnd-button">
-                    <img alt="facebook" src="~/img/SoMod/icons8-facebook-50.png">
-                </button>
-                <button class="rnd-button">
-                    <img alt="instagram" src="~/img/SoMod/icons8-instagram-50.png">
-                </button>
-                <button class="rnd-button">
-                    <img src="~/img/SoMod/icons8-twitter-50.png" alt="twitter">
-                </button>
-
-            </div>
-            <div class="copyright d-flex justify-content-center">
-                <p>&copy; 2024 - Unreal Brand INC- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy
-                        Policy</a>
-                    <a asp-area="" asp-controller="Home" asp-action="Privacy">Acessability </a>
-                </p>
-            </div>
-            
+     
+        <div class="logo ">
+            <img href="">
+        </div>
+        <div class="selections d-flex">
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Memberships">Memberships</a>
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="GiftCards">GiftCards</a>
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Locations">Locations</a>
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Careers">Careers</a>
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Franchise">Franchise</a>
+        </div>
+        <div clas="download-app">
 
         </div>
-    
+        <div class=" d-flex justify-content-center">
+            <button class="rnd-button">
+                <img alt="facebook" src="~/img/SoMod/icons8-facebook-50.png">
+            </button>
+            <button class="rnd-button">
+                <img alt="instagram" src="~/img/SoMod/icons8-instagram-50.png">
+            </button>
+            <button class="rnd-button">
+                <img src="~/img/SoMod/icons8-twitter-50.png" alt="twitter">
+            </button>
+
+        </div>
+        <div class=" d-flex justify-content-center ">
+            <p>&copy; 2024 - Unreal Brand INC- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy
+                    Policy</a>
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Acessability </a></p>
+        </div>
+   
+   </div>
+
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
